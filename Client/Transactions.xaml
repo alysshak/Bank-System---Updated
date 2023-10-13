@@ -23,16 +23,21 @@
 
                 <!-- Transaction Operations -->
                 <StackPanel Orientation="Horizontal" Margin="0,10,5,0">
-                    <TextBlock Text="Account Number: " VerticalAlignment="Center" Margin="0,0,5,0"/>
+                    <TextBlock Text="Account Number: " VerticalAlignment="Center" Margin="0,0,5,0" Width="100"/>
                     <TextBox x:Name="AccountNumberBox" Width="150" Text="Enter Account Number" Margin="0,0,5,0"/>
                     <TextBox x:Name="TransactionAmountBox" Width="150" Text="Amount" Margin="0,0,5,0"/>
                     <Button x:Name="DepositButton" Content="Deposit" Width="100" Margin="0,0,5,0" Click="DepositButton_Click"/>
                     <Button x:Name="WithdrawButton" Content="Withdraw" Width="100" Click="WithdrawButton_Click"/>
                 </StackPanel>
+                <!-- Initial Details -->
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Initial Balance: " VerticalAlignment="Center" Margin="0,5,5,0" Width="100"/>
+                    <TextBox x:Name="InitialBalanceBox" Width="150"  IsReadOnly="True" Margin="0,5,5,0"/>
+                </StackPanel>
                 <!-- Account Details -->
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Updated Balance: " VerticalAlignment="Center" Margin="0,5,5,0" />
-                    <TextBox x:Name="BalanceBox" Width="150" Text="Account Balance" IsReadOnly="True" Margin="0,5,5,0"/>
+                    <TextBlock Text="Updated Balance: " VerticalAlignment="Center" Margin="0,5,5,0" Width="100"/>
+                    <TextBox x:Name="BalanceBox" Width="150" IsReadOnly="True" Margin="0,5,5,0"/>
                 </StackPanel>
             </StackPanel>
         </GroupBox>
